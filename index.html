@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Ultimate PDF Editor (Unlimited)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="toolbar">
+  <input id="textInput" placeholder="Text">
+  <input id="fontSize" type="number" value="16">
+  <input id="rotation" type="number" value="0" placeholder="Rotate°">
+  <select id="fontFamily">
+    <option value="Helvetica">Helvetica</option>
+    <option value="TimesRoman">Times</option>
+    <option value="Courier">Courier</option>
+  </select>
+
+  <button id="addText">Add Text</button>
+  <input type="file" id="imageUpload" accept="image/*">
+  <button id="signBtn">Signature</button>
+
+  <button id="saveLayout">Save JSON</button>
+  <input type="file" id="loadLayout" accept="application/json">
+
+  <button id="generate">Generate PDF</button>
+  <input type="file" id="uploadPdf" accept="application/pdf">
+  <a id="download" style="display:none">Download</a>
+</div>
+
+<div id="viewer"></div>
+
+<canvas id="signCanvas" width="400" height="200" style="display:none"></canvas>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script src="https://unpkg.com/pdf-lib/dist/pdf-lib.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
