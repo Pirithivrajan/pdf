@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.toolbar {
+  background: #222;
+  color: white;
+  padding: 8px;
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.toolbar input, .toolbar select, .toolbar button {
+  padding: 6px;
+}
+
+#viewer {
+  background: #ccc;
+  padding: 20px;
+}
+
+.page {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.item {
+  position: absolute;
+  cursor: move;
+  user-select: none;
+}
+
+#signCanvas {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  border: 2px solid black;
+  background: white;
+}
